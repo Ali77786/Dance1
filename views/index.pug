@@ -1,0 +1,64 @@
+//- index.pug
+doctype html
+html
+  head
+    title Dance Academy Site
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul
+            #logo 
+                img(src="/static/img/logo.png", alt="logo")
+                | DA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    section#introSection 
+        div Welcome to the HIfza`s First Site Dance Academy.
+        .small  Eat - Sleep -  Dance -  Repeat...!!!
+        
+    section#missionSection 
+        h2 Our Mission Section.
+        .card 
+            h3 Heading Image 1
+            .card-box 
+                .card-img 
+                    img(src="static/img/2.png", alt="2")
+
+                .card-content 
+                    p This is first Image content.
+        .card 
+            h3 Heading Image 2
+            .card-box 
+                .card-img 
+                    img(src="static/img/3.png", alt="3")
+
+                .card-content 
+                    p This is second Image content.
+        .card 
+            h3 Heading Image 3
+            .card-box 
+                .card-img 
+                    img(src="static/img/1.png", alt="1")
+
+                .card-content 
+                    p This is third Image content.
+
+    section#sponsorsSection 
+        h2 Our Sponsors.
+        #sponsors 
+            img(src="/static/img/logo1.png", alt="Logo1" class="spImage" )
+            img(src="/static/img/logo2.png", alt="Logo2" class="spImage" )
+            img(src="/static/img/logo3.png", alt="Logo3" class="spImage" )
+            img(src="/static/img/logo4.png", alt="Logo4" class="spImage" )
+
+    
+    
+    footer#footer
+        | Copyright logo 2021 Danceacademy.com  ||| All rights reserved.
+    script
+      include ../static/index.js
